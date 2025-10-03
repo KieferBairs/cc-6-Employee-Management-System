@@ -34,4 +34,10 @@ const employees = [
     new Employee("Jack", "Marketing")
 ];
 
-let managers = 
+let managers = [
+    new Manager("David", "Cyber"),
+    new Manager("Andy", "Fianace")
+];
+
+
+    

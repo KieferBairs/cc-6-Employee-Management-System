@@ -16,10 +16,22 @@ class Employee {
  
 class Manager extends Employee {
     constructor(name, department, teamSize) {
-      super(name, department);
-      this.teamSize = teamSize;
+      super(name, department);  // Inherits name and department
+      this.teamSize = teamSize; // Adds teamsize
     }
    describe() {
     return `${this.name} manages a team of ${this.teamSize} in ${this.department}`;
    }
 }
+
+// Create sample employees and managers 
+
+const employees = [
+    new Employee("Steve", "Finance"),
+    new Employee("Bob", "IT"),
+    new Employee("Alex", "Cyber"),
+    new Employee("John", "HR"),
+    new Employee("Jack", "Marketing")
+];
+
+let managers = 

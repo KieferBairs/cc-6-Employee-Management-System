@@ -47,8 +47,7 @@ class Company {
     }
 
 // Add Employee to the company
-    
-    addEmployee(employee) {
+     addEmployee(employee) {
         this.employees.push(employee);
     }
 
@@ -60,4 +59,19 @@ for (let emp of this.employees) {
   }
 }
 
-    
+// Instantiate Company 
+
+const myCompany = new Company();
+
+// Add employees
+for (const emp of employees) {
+    myCompany.addEmployee(emp);
+}
+
+// Add Managers
+for (const mngr of managers) {
+    myCompany.addEmployee(mngr);    
+}
+
+// Print description to console
+myCompany.listEmployees();

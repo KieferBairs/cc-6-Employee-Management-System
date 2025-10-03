@@ -35,9 +35,29 @@ const employees = [
 ];
 
 let managers = [
-    new Manager("David", "Cyber"),
-    new Manager("Andy", "Fianace")
+    new Manager("David", "Cyber", 12),
+    new Manager("Andy", "Fianace", 7)
 ];
 
+// Create a class named comapny with a property employees
+
+class Company {
+    constructor() {
+       this.employees = [];
+    }
+
+// Add Employee to the company
+    
+    addEmployee(employee) {
+        this.employees.push(employee);
+    }
+
+// List Employees and managers with their description
+listEmployees() {
+for (let emp of this.employees) {
+    console.log(emp.describe());
+    }
+  }
+}
 
     

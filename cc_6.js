@@ -20,6 +20,6 @@ class Manager extends Employee {
       this.teamSize = teamSize;
     }
    describe() {
-    return `${this.name} manages a team of ${this.teamSize} in ${this.department}
+    return `${this.name} manages a team of ${this.teamSize} in ${this.department}`;
    }
 }
